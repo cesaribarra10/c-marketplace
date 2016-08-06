@@ -11,6 +11,7 @@
   <body>
     <%= render 'layouts/header' %>
     <!-- <div class='container'> -->
+      <!-- Shows flash messages at the top of the page -->
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
